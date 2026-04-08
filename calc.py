@@ -19,3 +19,10 @@ def compute(expression):
     else:
         print('unknown operator!')
         return None
+
+def test_compute():
+    """Basic tests for compute function."""
+    assert compute("1 + 2") == 3
+    assert compute("5 - 3") == 2
+    assert compute("2 * 4") == 8
+    assert compute("8 / 2") == 4
